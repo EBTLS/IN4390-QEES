@@ -1,0 +1,688 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 0 and seed -6505920639767118370 with 6 workers on 12 cores with 1202MB heap and 2703MB offheap memory [pid: 18376] (Windows 10 10.0 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file D:\OneDrive\TU_Delft\Q2\Quantitative Evaluation of Embedded Systems\Customizable Project\Lab\Afek_Gafani.toolbox\Model_1\MC.tla
+Parsing file D:\OneDrive\TU_Delft\Q2\Quantitative Evaluation of Embedded Systems\Customizable Project\Lab\Afek_Gafani.toolbox\Model_1\Afek_Gafani.tla
+Parsing file D:\SoftWare\Study_App\TLA\toolbox\plugins\org.lamport.tlatools_1.0.0.202012311918\tla2sany\StandardModules\TLC.tla
+Parsing file D:\SoftWare\Study_App\TLA\toolbox\plugins\org.lamport.tlatools_1.0.0.202012311918\tla2sany\StandardModules\Integers.tla
+Parsing file D:\SoftWare\Study_App\TLA\toolbox\plugins\org.lamport.tlatools_1.0.0.202012311918\tla2sany\StandardModules\Sequences.tla
+Parsing file D:\SoftWare\Study_App\TLA\toolbox\plugins\org.lamport.tlatools_1.0.0.202012311918\tla2sany\StandardModules\Naturals.tla
+Parsing file D:\SoftWare\Study_App\TLA\toolbox\plugins\org.lamport.tlatools_1.0.0.202012311918\tla2sany\StandardModules\FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module Afek_Gafani
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2021-01-09 23:51:38)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2021-01-09 23:51:38.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2144:3 @!@!@
+The EXCEPT was applied to non-existing fields of the value at
+line 115, col 26 to line 115, col 30 of module Afek_Gafani
+@!@!@ENDMSG 2144 @!@!@
+@!@!@STARTMSG 2114:1 @!@!@
+Deadlock reached.
+@!@!@ENDMSG 2114 @!@!@
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ cand_message_channels = <<<<>>, <<>>, <<>>>>
+/\ ord_message_channels = <<<<>>, <<>>, <<>>>>
+/\ nodes = <<[cand |-> [level |-> 0, status |-> "send", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {2, 3}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "send", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 3}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "send", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 2}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <candidate_send line 96, col 5 to line 104, col 38 of module Afek_Gafani>
+/\ cand_message_channels = <<<<>>, <<>>, <<>>>>
+/\ ord_message_channels = <<<<>>, <<>>, <<[level |-> 0, id |-> 2, sender |-> 2]>>>>
+/\ nodes = <<[cand |-> [level |-> 0, status |-> "send", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {2, 3}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 3}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "send", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 2}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <candidate_send line 96, col 5 to line 104, col 38 of module Afek_Gafani>
+/\ cand_message_channels = <<<<>>, <<>>, <<>>>>
+/\ ord_message_channels = << <<>>,
+   <<>>,
+   << [level |-> 0, id |-> 2, sender |-> 2],
+      [level |-> 0, id |-> 1, sender |-> 1] >> >>
+/\ nodes = <<[cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {2, 3}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 3}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "send", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 2}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <ordinary_receive line 168, col 5 to line 183, col 38 of module Afek_Gafani>
+/\ cand_message_channels = <<<<>>, <<>>, <<>>>>
+/\ ord_message_channels = <<<<>>, <<>>, <<[level |-> 0, id |-> 1, sender |-> 1]>>>>
+/\ nodes = <<[cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {2, 3}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 3}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "send", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 2}], ord |-> [status |-> "judge_1_2", msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 2], owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <ordinary_judge_1_2 line 186, col 5 to line 190, col 63 of module Afek_Gafani>
+/\ cand_message_channels = <<<<>>, <<>>, <<>>>>
+/\ ord_message_channels = <<<<>>, <<>>, <<[level |-> 0, id |-> 1, sender |-> 1]>>>>
+/\ nodes = <<[cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {2, 3}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 3}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "send", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 2}], ord |-> [status |-> "judge_1_2_1_1", msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 2], owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <ordinary_judge_1_2_1_1 line 193, col 5 to line 204, col 63 of module Afek_Gafani>
+/\ cand_message_channels = <<<<>>, <<>>, <<>>>>
+/\ ord_message_channels = <<<<>>, <<>>, <<[level |-> 0, id |-> 1, sender |-> 1]>>>>
+/\ nodes = <<[cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {2, 3}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 3}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "send", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 2}], ord |-> [status |-> "send", msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 2], owner_level |-> 0, potential_owner |-> 3, owner_id |-> 2, owner |-> 3]]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+7: <ordinary_send line 226, col 5 to line 235, col 37 of module Afek_Gafani>
+/\ cand_message_channels = <<<<>>, <<[level |-> 0, id |-> 2, sender |-> 3]>>, <<>>>>
+/\ ord_message_channels = <<<<>>, <<>>, <<[level |-> 0, id |-> 1, sender |-> 1]>>>>
+/\ nodes = <<[cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {2, 3}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 3}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "send", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 2}], ord |-> [status |-> "receive", msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 2], owner_level |-> 0, potential_owner |-> 3, owner_id |-> 2, owner |-> 3]]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+8: <candidate_receive line 107, col 5 to line 117, col 41 of module Afek_Gafani>
+/\ cand_message_channels = <<<<>>, <<>>, <<>>>>
+/\ ord_message_channels = <<<<>>, <<>>, <<[level |-> 0, id |-> 1, sender |-> 1]>>>>
+/\ nodes = <<[cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {2, 3}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "judge_1_1", killed |-> 0, elected |-> 0, msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 3], untraversed |-> {1, 3}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "send", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 2}], ord |-> [status |-> "receive", msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 2], owner_level |-> 0, potential_owner |-> 3, owner_id |-> 2, owner |-> 3]]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+9: <candidate_judge_1_1 line 123, col 5 to line 128, col 63 of module Afek_Gafani>
+/\ cand_message_channels = <<<<>>, <<>>, <<>>>>
+/\ ord_message_channels = <<<<>>, <<>>, <<[level |-> 0, id |-> 1, sender |-> 1]>>>>
+/\ nodes = <<[cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {2, 3}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 1, status |-> "final_judge", killed |-> 0, elected |-> 0, msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 3], untraversed |-> {1}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "send", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 2}], ord |-> [status |-> "receive", msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 2], owner_level |-> 0, potential_owner |-> 3, owner_id |-> 2, owner |-> 3]]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+10: <candidate_final_judge line 155, col 5 to line 160, col 63 of module Afek_Gafani>
+/\ cand_message_channels = <<<<>>, <<>>, <<>>>>
+/\ ord_message_channels = <<<<>>, <<>>, <<[level |-> 0, id |-> 1, sender |-> 1]>>>>
+/\ nodes = <<[cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {2, 3}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 1, status |-> "send", killed |-> 0, elected |-> 1, msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 3], untraversed |-> {1}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "send", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 2}], ord |-> [status |-> "receive", msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 2], owner_level |-> 0, potential_owner |-> 3, owner_id |-> 2, owner |-> 3]]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+11: <candidate_send line 96, col 5 to line 104, col 38 of module Afek_Gafani>
+/\ cand_message_channels = <<<<>>, <<>>, <<>>>>
+/\ ord_message_channels = << <<[level |-> 1, id |-> 2, sender |-> 2]>>,
+   <<>>,
+   <<[level |-> 0, id |-> 1, sender |-> 1]>> >>
+/\ nodes = <<[cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {2, 3}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 1, status |-> "receive", killed |-> 0, elected |-> 1, msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 3], untraversed |-> {1}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "send", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 2}], ord |-> [status |-> "receive", msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 2], owner_level |-> 0, potential_owner |-> 3, owner_id |-> 2, owner |-> 3]]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+12: <candidate_send line 96, col 5 to line 104, col 38 of module Afek_Gafani>
+/\ cand_message_channels = <<<<>>, <<>>, <<>>>>
+/\ ord_message_channels = << << [level |-> 1, id |-> 2, sender |-> 2],
+      [level |-> 0, id |-> 3, sender |-> 3] >>,
+   <<>>,
+   <<[level |-> 0, id |-> 1, sender |-> 1]>> >>
+/\ nodes = <<[cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {2, 3}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 1, status |-> "receive", killed |-> 0, elected |-> 1, msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 3], untraversed |-> {1}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 2}], ord |-> [status |-> "receive", msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 2], owner_level |-> 0, potential_owner |-> 3, owner_id |-> 2, owner |-> 3]]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+13: <ordinary_receive line 168, col 5 to line 183, col 38 of module Afek_Gafani>
+/\ cand_message_channels = <<<<>>, <<>>, <<>>>>
+/\ ord_message_channels = << <<[level |-> 0, id |-> 3, sender |-> 3]>>,
+   <<>>,
+   <<[level |-> 0, id |-> 1, sender |-> 1]>> >>
+/\ nodes = <<[cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {2, 3}], ord |-> [status |-> "judge_1_2", msg_dealing |-> [level |-> 1, id |-> 2, sender |-> 2], owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 1, status |-> "receive", killed |-> 0, elected |-> 1, msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 3], untraversed |-> {1}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 2}], ord |-> [status |-> "receive", msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 2], owner_level |-> 0, potential_owner |-> 3, owner_id |-> 2, owner |-> 3]]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+14: <ordinary_judge_1_2 line 186, col 5 to line 190, col 63 of module Afek_Gafani>
+/\ cand_message_channels = <<<<>>, <<>>, <<>>>>
+/\ ord_message_channels = << <<[level |-> 0, id |-> 3, sender |-> 3]>>,
+   <<>>,
+   <<[level |-> 0, id |-> 1, sender |-> 1]>> >>
+/\ nodes = <<[cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {2, 3}], ord |-> [status |-> "judge_1_2_1_1", msg_dealing |-> [level |-> 1, id |-> 2, sender |-> 2], owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 1, status |-> "receive", killed |-> 0, elected |-> 1, msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 3], untraversed |-> {1}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 2}], ord |-> [status |-> "receive", msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 2], owner_level |-> 0, potential_owner |-> 3, owner_id |-> 2, owner |-> 3]]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+15: <ordinary_judge_1_2_1_1 line 193, col 5 to line 204, col 63 of module Afek_Gafani>
+/\ cand_message_channels = <<<<>>, <<>>, <<>>>>
+/\ ord_message_channels = << <<[level |-> 0, id |-> 3, sender |-> 3]>>,
+   <<>>,
+   <<[level |-> 0, id |-> 1, sender |-> 1]>> >>
+/\ nodes = <<[cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {2, 3}], ord |-> [status |-> "send", msg_dealing |-> [level |-> 1, id |-> 2, sender |-> 2], owner_level |-> 1, potential_owner |-> 1, owner_id |-> 2, owner |-> 1]], [cand |-> [level |-> 1, status |-> "receive", killed |-> 0, elected |-> 1, msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 3], untraversed |-> {1}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 2}], ord |-> [status |-> "receive", msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 2], owner_level |-> 0, potential_owner |-> 3, owner_id |-> 2, owner |-> 3]]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+16: <ordinary_send line 226, col 5 to line 235, col 37 of module Afek_Gafani>
+/\ cand_message_channels = <<<<>>, <<[level |-> 1, id |-> 2, sender |-> 1]>>, <<>>>>
+/\ ord_message_channels = << <<[level |-> 0, id |-> 3, sender |-> 3]>>,
+   <<>>,
+   <<[level |-> 0, id |-> 1, sender |-> 1]>> >>
+/\ nodes = <<[cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {2, 3}], ord |-> [status |-> "receive", msg_dealing |-> [level |-> 1, id |-> 2, sender |-> 2], owner_level |-> 1, potential_owner |-> 1, owner_id |-> 2, owner |-> 1]], [cand |-> [level |-> 1, status |-> "receive", killed |-> 0, elected |-> 1, msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 3], untraversed |-> {1}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 2}], ord |-> [status |-> "receive", msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 2], owner_level |-> 0, potential_owner |-> 3, owner_id |-> 2, owner |-> 3]]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+17: <candidate_receive line 107, col 5 to line 117, col 41 of module Afek_Gafani>
+/\ cand_message_channels = <<<<>>, <<>>, <<>>>>
+/\ ord_message_channels = << <<[level |-> 0, id |-> 3, sender |-> 3]>>,
+   <<>>,
+   <<[level |-> 0, id |-> 1, sender |-> 1]>> >>
+/\ nodes = <<[cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {2, 3}], ord |-> [status |-> "receive", msg_dealing |-> [level |-> 1, id |-> 2, sender |-> 2], owner_level |-> 1, potential_owner |-> 1, owner_id |-> 2, owner |-> 1]], [cand |-> [level |-> 1, status |-> "judge_1_1", killed |-> 0, elected |-> 1, msg_dealing |-> [level |-> 1, id |-> 2, sender |-> 1], untraversed |-> {1}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 2}], ord |-> [status |-> "receive", msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 2], owner_level |-> 0, potential_owner |-> 3, owner_id |-> 2, owner |-> 3]]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+18: <candidate_judge_1_1 line 123, col 5 to line 128, col 63 of module Afek_Gafani>
+/\ cand_message_channels = <<<<>>, <<>>, <<>>>>
+/\ ord_message_channels = << <<[level |-> 0, id |-> 3, sender |-> 3]>>,
+   <<>>,
+   <<[level |-> 0, id |-> 1, sender |-> 1]>> >>
+/\ nodes = <<[cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {2, 3}], ord |-> [status |-> "receive", msg_dealing |-> [level |-> 1, id |-> 2, sender |-> 2], owner_level |-> 1, potential_owner |-> 1, owner_id |-> 2, owner |-> 1]], [cand |-> [level |-> 2, status |-> "final_judge", killed |-> 0, elected |-> 1, msg_dealing |-> [level |-> 1, id |-> 2, sender |-> 1], untraversed |-> {}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 2}], ord |-> [status |-> "receive", msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 2], owner_level |-> 0, potential_owner |-> 3, owner_id |-> 2, owner |-> 3]]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+19: <candidate_final_judge line 155, col 5 to line 160, col 63 of module Afek_Gafani>
+/\ cand_message_channels = <<<<>>, <<>>, <<>>>>
+/\ ord_message_channels = << <<[level |-> 0, id |-> 3, sender |-> 3]>>,
+   <<>>,
+   <<[level |-> 0, id |-> 1, sender |-> 1]>> >>
+/\ nodes = <<[cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {2, 3}], ord |-> [status |-> "receive", msg_dealing |-> [level |-> 1, id |-> 2, sender |-> 2], owner_level |-> 1, potential_owner |-> 1, owner_id |-> 2, owner |-> 1]], [cand |-> [level |-> 2, status |-> "send", killed |-> 0, elected |-> 1, msg_dealing |-> [level |-> 1, id |-> 2, sender |-> 1], untraversed |-> {}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 2}], ord |-> [status |-> "receive", msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 2], owner_level |-> 0, potential_owner |-> 3, owner_id |-> 2, owner |-> 3]]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+20: <ordinary_receive line 168, col 5 to line 183, col 38 of module Afek_Gafani>
+/\ cand_message_channels = <<<<>>, <<>>, <<>>>>
+/\ ord_message_channels = <<<<>>, <<>>, <<[level |-> 0, id |-> 1, sender |-> 1]>>>>
+/\ nodes = <<[cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {2, 3}], ord |-> [status |-> "receive", msg_dealing |-> [level |-> 1, id |-> 2, sender |-> 2], owner_level |-> 1, potential_owner |-> 1, owner_id |-> 2, owner |-> 1]], [cand |-> [level |-> 2, status |-> "send", killed |-> 0, elected |-> 1, msg_dealing |-> [level |-> 1, id |-> 2, sender |-> 1], untraversed |-> {}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 2}], ord |-> [status |-> "receive", msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 2], owner_level |-> 0, potential_owner |-> 3, owner_id |-> 2, owner |-> 3]]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+21: <ordinary_receive line 168, col 5 to line 183, col 38 of module Afek_Gafani>
+/\ cand_message_channels = <<<<>>, <<>>, <<>>>>
+/\ ord_message_channels = <<<<>>, <<>>, <<>>>>
+/\ nodes = <<[cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {2, 3}], ord |-> [status |-> "receive", msg_dealing |-> [level |-> 1, id |-> 2, sender |-> 2], owner_level |-> 1, potential_owner |-> 1, owner_id |-> 2, owner |-> 1]], [cand |-> [level |-> 2, status |-> "send", killed |-> 0, elected |-> 1, msg_dealing |-> [level |-> 1, id |-> 2, sender |-> 1], untraversed |-> {}], ord |-> [status |-> "receive", msg_dealing |-> <<0, 0, 0>>, owner_level |-> -1, potential_owner |-> -1, owner_id |-> -1, owner |-> -1]], [cand |-> [level |-> 0, status |-> "receive", killed |-> 0, elected |-> 0, msg_dealing |-> <<0, 0, 0>>, untraversed |-> {1, 2}], ord |-> [status |-> "receive", msg_dealing |-> [level |-> 0, id |-> 2, sender |-> 2], owner_level |-> 0, potential_owner |-> 3, owner_id |-> 2, owner |-> 3]]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2021-01-09 23:51:39
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 73, col 1 to line 73, col 4 of module Afek_Gafani>: 2:2
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 74, col 5 to line 75, col 22 of module Afek_Gafani: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<candidate_send line 95, col 1 to line 95, col 23 of module Afek_Gafani>: 611:5834
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 96, col 8 to line 96, col 37 of module Afek_Gafani: 61396
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 96, col 8 to line 96, col 30 of module Afek_Gafani: 55562
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 97, col 8 to line 97, col 42 of module Afek_Gafani: 13974
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 97, col 8 to line 97, col 9 of module Afek_Gafani: 8140
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 97, col 15 to line 97, col 42 of module Afek_Gafani: 8140
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 101, col 12 to line 102, col 90 of module Afek_Gafani: 5834
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 103, col 8 to line 103, col 58 of module Afek_Gafani: 5834
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 104, col 8 to line 104, col 38 of module Afek_Gafani: 5834
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<candidate_receive line 106, col 1 to line 106, col 21 of module Afek_Gafani>: 1225:3003
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 107, col 8 to line 107, col 38 of module Afek_Gafani: 30771
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 107, col 8 to line 107, col 28 of module Afek_Gafani: 27768
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 108, col 8 to line 108, col 39 of module Afek_Gafani: 22002
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 108, col 8 to line 108, col 32 of module Afek_Gafani: 18999
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 108, col 36 to line 108, col 39 of module Afek_Gafani: 18999
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 109, col 8 to line 109, col 110 of module Afek_Gafani: 3003
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 109, col 31 to line 109, col 110 of module Afek_Gafani: 3003
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 109, col 32 to line 109, col 52 of module Afek_Gafani: 3003
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 109, col 61 to line 109, col 109 of module Afek_Gafani: 3003
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 109, col 69 to line 109, col 109 of module Afek_Gafani: 3003
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 30, col 5 to line 32, col 72 of module Afek_Gafani: 3003
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 30, col 8 to line 30, col 35 of module Afek_Gafani: 3003
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 31, col 14 to line 31, col 18 of module Afek_Gafani: 2859
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 32, col 10 to line 32, col 72 of module Afek_Gafani: 144
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 24, col 5 to line 26, col 65 of module Afek_Gafani: 288
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 24, col 8 to line 24, col 20 of module Afek_Gafani: 288
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 25, col 14 to line 25, col 17 of module Afek_Gafani: 144
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 26, col 11 to line 26, col 65 of module Afek_Gafani: 144
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 32, col 24 to line 32, col 50 of module Afek_Gafani: 144
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 32, col 52 to line 32, col 71 of module Afek_Gafani: 144
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 109, col 85 to line 109, col 86 of module Afek_Gafani: 3003
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 109, col 88 to line 109, col 108 of module Afek_Gafani: 3003
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 111, col 15 to line 111, col 50 of module Afek_Gafani: 3003
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 111, col 15 to line 111, col 23 of module Afek_Gafani: 3003
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 111, col 28 to line 111, col 50 of module Afek_Gafani: 2790
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 112, col 22 to line 113, col 72 of module Afek_Gafani: 2790
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 115, col 18 to line 116, col 63 of module Afek_Gafani: 213
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 117, col 8 to line 117, col 41 of module Afek_Gafani: 3003
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<candidate_judge_1_1 line 122, col 1 to line 122, col 23 of module Afek_Gafani>: 1001:2498
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 123, col 8 to line 123, col 40 of module Afek_Gafani: 30264
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 123, col 8 to line 123, col 28 of module Afek_Gafani: 27766
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 125, col 12 to line 127, col 64 of module Afek_Gafani: 2498
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 128, col 8 to line 128, col 63 of module Afek_Gafani: 2498
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<candidate_judge_1_2 line 130, col 1 to line 130, col 23 of module Afek_Gafani>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 131, col 8 to line 131, col 40 of module Afek_Gafani: 27764
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 135, col 22 to line 135, col 70 of module Afek_Gafani: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 137, col 17 to line 137, col 69 of module Afek_Gafani: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 138, col 8 to line 138, col 63 of module Afek_Gafani: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<candidate_judge_1_2_2 line 140, col 1 to line 140, col 25 of module Afek_Gafani>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 141, col 8 to line 141, col 42 of module Afek_Gafani: 27764
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 147, col 16 to line 148, col 135 of module Afek_Gafani: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 149, col 8 to line 150, col 56 of module Afek_Gafani: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 151, col 8 to line 151, col 42 of module Afek_Gafani: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<candidate_final_judge line 154, col 1 to line 154, col 25 of module Afek_Gafani>: 997:2208
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 155, col 8 to line 155, col 42 of module Afek_Gafani: 29972
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 155, col 8 to line 155, col 28 of module Afek_Gafani: 27764
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 156, col 11 to line 156, col 33 of module Afek_Gafani: 2208
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 157, col 14 to line 158, col 55 of module Afek_Gafani: 2208
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 159, col 14 to line 159, col 62 of module Afek_Gafani: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 160, col 8 to line 160, col 63 of module Afek_Gafani: 2208
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<ordinary_receive line 167, col 1 to line 167, col 20 of module Afek_Gafani>: 1646:4394
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 168, col 8 to line 168, col 37 of module Afek_Gafani: 32138
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 168, col 8 to line 168, col 27 of module Afek_Gafani: 27744
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 169, col 8 to line 169, col 38 of module Afek_Gafani: 23652
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 169, col 8 to line 169, col 31 of module Afek_Gafani: 19258
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 169, col 35 to line 169, col 38 of module Afek_Gafani: 19258
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 170, col 8 to line 170, col 107 of module Afek_Gafani: 4394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 170, col 31 to line 170, col 107 of module Afek_Gafani: 4394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 170, col 32 to line 170, col 51 of module Afek_Gafani: 4394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 170, col 60 to line 170, col 106 of module Afek_Gafani: 4394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 170, col 68 to line 170, col 106 of module Afek_Gafani: 4394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 30, col 5 to line 32, col 72 of module Afek_Gafani: 4394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 30, col 8 to line 30, col 35 of module Afek_Gafani: 4394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 31, col 14 to line 31, col 18 of module Afek_Gafani: 3952
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 32, col 10 to line 32, col 72 of module Afek_Gafani: 442
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 24, col 5 to line 26, col 65 of module Afek_Gafani: 884
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 24, col 8 to line 24, col 20 of module Afek_Gafani: 884
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 25, col 14 to line 25, col 17 of module Afek_Gafani: 442
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 26, col 11 to line 26, col 65 of module Afek_Gafani: 442
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 32, col 24 to line 32, col 50 of module Afek_Gafani: 442
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 32, col 52 to line 32, col 71 of module Afek_Gafani: 442
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 170, col 83 to line 170, col 84 of module Afek_Gafani: 4394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 170, col 86 to line 170, col 105 of module Afek_Gafani: 4394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 175, col 18 to line 175, col 61 of module Afek_Gafani: 4394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 175, col 19 to line 175, col 55 of module Afek_Gafani: 4394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 36, col 5 to line 44, col 18 of module Afek_Gafani: 4394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 36, col 8 to line 36, col 26 of module Afek_Gafani: 4394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 37, col 14 to line 37, col 15 of module Afek_Gafani: 257
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 39, col 9 to line 44, col 18 of module Afek_Gafani: 4137
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 39, col 12 to line 39, col 28 of module Afek_Gafani: 4137
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 42, col 13 to line 44, col 18 of module Afek_Gafani: 1480
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 42, col 16 to line 42, col 26 of module Afek_Gafani: 1480
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 43, col 22 to line 43, col 23 of module Afek_Gafani: 711
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 175, col 33 to line 175, col 35 of module Afek_Gafani: 4394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 175, col 37 to line 175, col 46 of module Afek_Gafani: 4394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 175, col 48 to line 175, col 54 of module Afek_Gafani: 1480
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 175, col 60 to line 175, col 61 of module Afek_Gafani: 4394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 176, col 17 to line 176, col 64 of module Afek_Gafani: 968
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 177, col 16 to line 177, col 58 of module Afek_Gafani: 3426
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 177, col 17 to line 177, col 53 of module Afek_Gafani: 3426
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 36, col 5 to line 44, col 18 of module Afek_Gafani: 3426
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 36, col 8 to line 36, col 26 of module Afek_Gafani: 3426
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 39, col 9 to line 44, col 18 of module Afek_Gafani: 3426
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 39, col 12 to line 39, col 28 of module Afek_Gafani: 3426
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 42, col 13 to line 44, col 18 of module Afek_Gafani: 769
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 177, col 31 to line 177, col 33 of module Afek_Gafani: 3426
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 177, col 35 to line 177, col 44 of module Afek_Gafani: 3426
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 177, col 46 to line 177, col 52 of module Afek_Gafani: 769
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 178, col 17 to line 179, col 62 of module Afek_Gafani: 2657
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 180, col 16 to line 182, col 62 of module Afek_Gafani: 769
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 183, col 8 to line 183, col 38 of module Afek_Gafani: 4394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<ordinary_judge_1_2 line 185, col 1 to line 185, col 22 of module Afek_Gafani>: 1259:2528
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 186, col 8 to line 186, col 39 of module Afek_Gafani: 30268
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 186, col 8 to line 186, col 27 of module Afek_Gafani: 27740
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 187, col 11 to line 187, col 32 of module Afek_Gafani: 2528
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 188, col 18 to line 188, col 71 of module Afek_Gafani: 2186
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 189, col 14 to line 189, col 67 of module Afek_Gafani: 342
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 190, col 8 to line 190, col 63 of module Afek_Gafani: 2528
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<ordinary_judge_1_2_1_1 line 192, col 1 to line 192, col 26 of module Afek_Gafani>: 1040:2109
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 193, col 7 to line 193, col 42 of module Afek_Gafani: 29847
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 193, col 7 to line 193, col 26 of module Afek_Gafani: 27738
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 199, col 17 to line 203, col 67 of module Afek_Gafani: 2109
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 204, col 8 to line 204, col 63 of module Afek_Gafani: 2109
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<ordinary_judge_1_2_1_2 line 206, col 1 to line 206, col 26 of module Afek_Gafani>: 217:279
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 207, col 7 to line 207, col 42 of module Afek_Gafani: 28015
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 207, col 7 to line 207, col 26 of module Afek_Gafani: 27736
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 213, col 17 to line 216, col 67 of module Afek_Gafani: 279
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 217, col 8 to line 217, col 63 of module Afek_Gafani: 279
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<ordinary_judge_1_3 line 219, col 1 to line 219, col 22 of module Afek_Gafani>: 321:704
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 220, col 8 to line 220, col 39 of module Afek_Gafani: 28440
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 220, col 8 to line 220, col 27 of module Afek_Gafani: 27736
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 221, col 8 to line 222, col 74 of module Afek_Gafani: 704
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 223, col 8 to line 223, col 63 of module Afek_Gafani: 704
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<ordinary_send line 225, col 1 to line 225, col 17 of module Afek_Gafani>: 1697:2868
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 226, col 8 to line 226, col 34 of module Afek_Gafani: 30614
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 226, col 8 to line 226, col 27 of module Afek_Gafani: 27746
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 232, col 17 to line 233, col 91 of module Afek_Gafani: 2868
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 234, col 8 to line 234, col 55 of module Afek_Gafani: 2868
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 235, col 8 to line 235, col 37 of module Afek_Gafani: 2868
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<TypeOK line 87, col 1 to line 87, col 6 of module Afek_Gafani>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 88, col 5 to line 89, col 25 of module Afek_Gafani: 10015
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 88, col 8 to line 88, col 26 of module Afek_Gafani: 10015
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 82, col 5 to line 82, col 124 of module Afek_Gafani: 10015
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 82, col 29 to line 82, col 124 of module Afek_Gafani: 30045
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 82, col 15 to line 82, col 26 of module Afek_Gafani: 10015
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 89, col 8 to line 89, col 25 of module Afek_Gafani: 10015
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 85, col 5 to line 85, col 127 of module Afek_Gafani: 10015
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 85, col 29 to line 85, col 127 of module Afek_Gafani: 30045
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 85, col 15 to line 85, col 26 of module Afek_Gafani: 10015
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(25) at 2021-01-09 23:51:39: 26,388 states generated (1,114,201 s/min), 10,015 distinct states found (422,871 ds/min), 773 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+26388 states generated, 10015 distinct states found, 773 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 25.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2268:0 @!@!@
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 6 and the 95th percentile is 2).
+@!@!@ENDMSG 2268 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 1427ms at (2021-01-09 23:51:39)
+@!@!@ENDMSG 2186 @!@!@
